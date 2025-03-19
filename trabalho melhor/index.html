@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Leis do Aprendiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz - As Leis do Aprendiz</h1>
+            <p>Teste seus conhecimentos sobre os direitos e deveres do aprendiz!</p>
+        </header>
+        
+        <!-- Área do Quiz -->
+        <div id="quizArea">
+            <div id="questionContainer" class="question-container">
+                <p id="question" class="question">Pergunta será exibida aqui</p>
+                <div class="options">
+                    <button id="option1" class="option" onclick="checkAnswer(1)">Opção 1</button>
+                    <button id="option2" class="option" onclick="checkAnswer(2)">Opção 2</button>
+                    <button id="option3" class="option" onclick="checkAnswer(3)">Opção 3</button>
+                </div>
+            </div>
+
+            <!-- Feedback e Pontuação -->
+            <div id="feedback" class="feedback"></div>
+            <div id="score" class="score">Pontuação: 0</div>
+        </div>
+
+        <!-- Botão de Início -->
+        <button id="startButton" class="start-button" onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
